@@ -16,7 +16,7 @@ for t in tables:
         writer = csv.writer(csv_file, delimiter = ",")
         r = cursor.fetchone()
         while r != None:
-            writer.writerow(list(row))
+            writer.writerow(list(r))
             r = cursor.fetchone()
 
 cursor.close()
